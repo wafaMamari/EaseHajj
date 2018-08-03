@@ -61,6 +61,7 @@ public class CitizenLoginActivity extends AppCompatActivity implements LoaderCal
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
+
     private View mLoginFormView;
 
     @Override
@@ -336,7 +337,7 @@ public class CitizenLoginActivity extends AppCompatActivity implements LoaderCal
             if (success) {
 
 
-                Intent Intent = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent Intent = new Intent(getApplicationContext(), addServices.class);
                 startActivity(Intent);//finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
@@ -353,9 +354,10 @@ public class CitizenLoginActivity extends AppCompatActivity implements LoaderCal
 
 
 
+
     }
     public void SIGNIN(View view) {
-        Intent Intent = new Intent(getApplicationContext(), HomeActivity.class);
+        Intent Intent = new Intent(getApplicationContext(), addServices.class);
         startActivity(Intent);
     }
     public void SIGNUP(View view) {

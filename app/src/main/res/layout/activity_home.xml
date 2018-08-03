@@ -8,6 +8,88 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.androidapp.hajj.HomeActivity">
+    tools:context="com.androidapp.hajj.HomeActivity"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout"
+                    android:layout_alignTop="@+id/linearLayout"
+                    android:text="Location"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/locationSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Type"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/foodsp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Order Service"
+                android:textAllCaps="false"
+                android:onClick="orderService"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
 
 </RelativeLayout>
